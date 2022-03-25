@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,a,x,y;
-    scanf("%d",&n);
-    a=n/3600;
-    x=n/60;
-    y=n-(x*60);
-    printf("%d:%d:%d\n",a,x,y);
+    int N,hours,minutes,seconds;
+    scanf("%d",&N);
+    hours=N/3600;
+    seconds=N-(hours*3600);
+
+    minutes=seconds/60;
+    seconds=seconds-(minutes*60);
+    printf("%d:%d:%d",hours,minutes,seconds);
     return 0;
 }
 

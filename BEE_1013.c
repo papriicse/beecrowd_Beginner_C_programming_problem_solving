@@ -4,13 +4,18 @@ int main()
     int a,b,c,tmp;
     scanf("%d %d %d",&a,&b,&c);
     tmp=a;
-    if(a<c&&b<c)
+    if(a<b||a<c)
     {
-        tmp=c;
-    }
+        if(b<c)
+        {
+           tmp=c;
+        }
+
     else
     {
         tmp=b;
+    }
+
     }
     printf("%d eh o mair\n",tmp);
     return 0;
