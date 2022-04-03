@@ -3,6 +3,7 @@ int main()
 {
     int n,hundred,fifty,twenty,ten,five,two,one;
     scanf("%d",&n);
+    printf("%d\n",n);
     hundred=n/100;
     n=n-(hundred*100);
     fifty=n/50;
