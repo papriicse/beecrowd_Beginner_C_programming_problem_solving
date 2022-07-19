@@ -18,7 +18,7 @@ int main()
         printf("Aluno em exame");
     }
 
-printf("media: %lf\n",avg);
+printf("Media: %lf\n",avg);
 
 
 
